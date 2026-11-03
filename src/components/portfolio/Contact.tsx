@@ -124,9 +124,9 @@ export function Contact() {
         </motion.p>
       </motion.div>
 
-      <div className="mt-20 flex flex-col items-center justify-between gap-3 border-t border-border pt-8 text-center md:flex-row md:text-left">
-        <p className="label-mono">Muhammad Taha — MERN Stack Developer</p>
-        <p className="label-mono">Karachi, Pakistan</p>
+      <div className="mt-20 flex flex-col items-center justify-between gap-3 border-t border-neon/40 pt-8 text-center md:flex-row md:text-left">
+        <p className="label-mono text-xs text-foreground">Muhammad Taha — MERN Stack Developer</p>
+        <p className="label-mono text-xs text-muted-foreground">Karachi, Pakistan</p>
       </div>
     </section>
   );
