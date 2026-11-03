@@ -1,5 +1,12 @@
 import { useRef, useState } from "react";
-import { motion, useMotionValue, useScroll, useSpring, useTransform, useReducedMotion } from "motion/react";
+import {
+  motion,
+  useMotionValue,
+  useScroll,
+  useSpring,
+  useTransform,
+  useReducedMotion,
+} from "motion/react";
 import {
   Boxes,
   Braces,
@@ -95,7 +102,9 @@ function SkillCard({ skill, index }: { skill: (typeof skills)[number]; index: nu
           </span>
         </div>
         <div style={tilt ? { transform: "translateZ(26px)" } : {}}>
-          <p className="font-display text-xl leading-none tracking-wide md:text-2xl">{skill.name}</p>
+          <p className="font-display text-xl leading-none tracking-wide md:text-2xl">
+            {skill.name}
+          </p>
           <p className="label-mono mt-1.5 text-[0.55rem]">{skill.tag}</p>
         </div>
       </motion.div>
@@ -129,7 +138,10 @@ export function Skills() {
         </div>
       </div>
 
-      <motion.div style={{ x: marqueeX }} className="mt-20 flex w-max gap-10 whitespace-nowrap opacity-[0.07]">
+      <motion.div
+        style={{ x: marqueeX }}
+        className="mt-20 flex w-max gap-10 whitespace-nowrap opacity-[0.07]"
+      >
         {[0, 1].map((r) => (
           <span key={r} className="display-xl text-[16vw]">
             MERN STACK · MOTION · TYPESCRIPT ·

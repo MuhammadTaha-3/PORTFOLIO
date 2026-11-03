@@ -47,7 +47,9 @@ export function CustomCursor() {
             animate={{
               width: hovering ? 56 : 18,
               height: hovering ? 56 : 18,
-              backgroundColor: hovering ? "oklch(0.74 0.082 245 / 0.12)" : "oklch(0.74 0.082 245 / 0.9)",
+              backgroundColor: hovering
+                ? "oklch(0.74 0.082 245 / 0.12)"
+                : "oklch(0.74 0.082 245 / 0.9)",
             }}
             transition={{ type: "spring", stiffness: 300, damping: 24 }}
           />

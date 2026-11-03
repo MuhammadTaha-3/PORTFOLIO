@@ -32,7 +32,8 @@ const projects: Project[] = [
     year: "2026",
     type: "Coffee Shop Website",
     stack: ["React", "Tailwind", "Vercel"],
-    blurb: "Small-batch roastery storefront with a warm, editorial layout and a smooth ordering flow.",
+    blurb:
+      "Small-batch roastery storefront with a warm, editorial layout and a smooth ordering flow.",
     image: beanco,
     url: "https://bean-and-co-beta.vercel.app/",
   },
@@ -41,7 +42,8 @@ const projects: Project[] = [
     year: "2026",
     type: "Sneaker E-Commerce Store",
     stack: ["React", "Tailwind", "Vercel"],
-    blurb: "Dark, bold sneaker store with curated collections, categories and a fast shopping experience.",
+    blurb:
+      "Dark, bold sneaker store with curated collections, categories and a fast shopping experience.",
     image: shoeshead,
     url: "https://shoesshead.vercel.app/",
   },
@@ -50,7 +52,8 @@ const projects: Project[] = [
     year: "2026",
     type: "Food Ordering Website",
     stack: ["React", "Tailwind", "Vercel"],
-    blurb: "Restaurant ordering experience with a rich menu, dashboard and handcrafted dish showcases.",
+    blurb:
+      "Restaurant ordering experience with a rich menu, dashboard and handcrafted dish showcases.",
     image: foodholic,
     url: "https://food-holic.vercel.app/",
   },

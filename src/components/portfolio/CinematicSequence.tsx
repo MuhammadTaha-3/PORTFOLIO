@@ -29,7 +29,10 @@ export function CinematicSequence() {
       <div className="sticky top-0 flex h-[100svh] items-center justify-center overflow-hidden">
         <motion.div
           className="pointer-events-none absolute inset-0 bg-neon"
-          style={{ opacity: glow, maskImage: "radial-gradient(circle at 50% 50%, black, transparent 60%)" }}
+          style={{
+            opacity: glow,
+            maskImage: "radial-gradient(circle at 50% 50%, black, transparent 60%)",
+          }}
         />
         <div className="grid-lines pointer-events-none absolute inset-0 opacity-40" />
 
@@ -40,13 +43,12 @@ export function CinematicSequence() {
           height={1024}
           loading="lazy"
           className="pointer-events-none absolute w-[60vmin] mix-blend-multiply"
-          style={reduce ? { opacity: 0.2 } : { rotate: objRotate, scale: objScale, opacity: objOpacity }}
+          style={
+            reduce ? { opacity: 0.2 } : { rotate: objRotate, scale: objScale, opacity: objOpacity }
+          }
         />
 
-        <motion.div
-          className="relative z-10 px-6 text-center"
-          style={{ perspective: 900 }}
-        >
+        <motion.div className="relative z-10 px-6 text-center" style={{ perspective: 900 }}>
           <motion.h2
             className="display-xl text-[clamp(3rem,13vw,11rem)]"
             style={reduce ? {} : { z, scale, rotate, opacity, transformStyle: "preserve-3d" }}

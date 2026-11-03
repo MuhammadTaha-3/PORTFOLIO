@@ -73,9 +73,7 @@ export function CodeObject({ motionStyle }: Props) {
       }}
     >
       {/* glow behind the panel */}
-      <div
-        className="pointer-events-none absolute -inset-16 -z-10 rounded-[50%] bg-neon-soft blur-[90px]"
-      />
+      <div className="pointer-events-none absolute -inset-16 -z-10 rounded-[50%] bg-neon-soft blur-[90px]" />
 
       {/* code panel */}
       <div className="glass-panel w-[min(86vw,540px)] rounded-xl border border-border/80 p-5 shadow-[0_40px_120px_-40px_rgba(90,70,50,0.3)] md:p-7">
@@ -96,7 +94,10 @@ export function CodeObject({ motionStyle }: Props) {
               transition={{ duration: 0.5, delay: 0.5 + i * 0.12, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="w-4 shrink-0 text-right text-muted-foreground/40">{i + 1}</span>
-              <span style={{ paddingLeft: `${line.indent * 1.25}rem` }} className="flex flex-wrap gap-x-2">
+              <span
+                style={{ paddingLeft: `${line.indent * 1.25}rem` }}
+                className="flex flex-wrap gap-x-2"
+              >
                 {line.tokens.map((tk, j) => (
                   <span key={j} className={tk.c}>
                     {tk.t}

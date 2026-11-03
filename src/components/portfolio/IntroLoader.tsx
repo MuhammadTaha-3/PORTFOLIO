@@ -56,7 +56,10 @@ export function IntroLoader() {
               <span className="font-display text-4xl tabular-nums">{progress}%</span>
             </div>
             <div className="mt-8 h-px w-full overflow-hidden bg-border">
-              <motion.div className="h-full origin-left bg-neon" animate={{ scaleX: progress / 100 }} />
+              <motion.div
+                className="h-full origin-left bg-neon"
+                animate={{ scaleX: progress / 100 }}
+              />
             </div>
           </div>
 
