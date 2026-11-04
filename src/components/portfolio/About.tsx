@@ -19,7 +19,7 @@ export function About() {
     <section
       ref={ref}
       id="about"
-      className="relative mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40"
+      className="relative mx-auto max-w-[1400px] px-4 py-20 sm:px-6 sm:py-28 md:px-10 md:py-40"
     >
       <SectionLabel index="01">About</SectionLabel>
 

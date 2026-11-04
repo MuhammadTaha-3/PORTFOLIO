@@ -48,9 +48,12 @@ export function CinematicSequence() {
           }
         />
 
-        <motion.div className="relative z-10 px-6 text-center" style={{ perspective: 900 }}>
+        <motion.div
+          className="relative z-10 w-full px-4 text-center sm:px-6"
+          style={{ perspective: 900 }}
+        >
           <motion.h2
-            className="display-xl text-[clamp(3rem,13vw,11rem)]"
+            className="display-xl text-[clamp(2rem,11vw,11rem)] sm:text-[clamp(3rem,13vw,11rem)]"
             style={reduce ? {} : { z, scale, rotate, opacity, transformStyle: "preserve-3d" }}
           >
             {lines.map((l, i) => (

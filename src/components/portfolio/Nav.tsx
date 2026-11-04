@@ -35,7 +35,7 @@ export function Nav() {
           scrolled ? "glass-panel border-x-0 border-t-0" : "border-transparent"
         } text-foreground`}
       >
-        <nav className="mx-auto grid max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-4 px-6 py-4 md:px-10">
+        <nav className="mx-auto grid max-w-[1400px] grid-cols-[1fr_auto_1fr] items-center gap-4 px-4 py-4 sm:px-6 md:px-10">
           <a
             href="#hero"
             className="hidden font-display text-2xl tracking-wide md:inline-block"

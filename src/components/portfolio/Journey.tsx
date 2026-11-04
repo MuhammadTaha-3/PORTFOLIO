@@ -36,7 +36,10 @@ export function Journey() {
   const line = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
 
   return (
-    <section id="journey" className="relative mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
+    <section
+      id="journey"
+      className="relative mx-auto max-w-[1400px] px-4 py-20 sm:px-6 sm:py-28 md:px-10 md:py-40"
+    >
       <SectionLabel index="04">Journey</SectionLabel>
       <h2 className="display-xl mt-10 text-[clamp(2.4rem,7vw,6.5rem)]">
         <MaskLine>How I got here</MaskLine>

@@ -67,7 +67,7 @@ export function Hero() {
       </motion.div>
 
       <motion.div
-        className="relative z-10 mx-auto grid w-full max-w-[1400px] grid-cols-1 px-6 md:px-10 lg:grid-cols-2 lg:items-center lg:gap-16"
+        className="relative z-10 mx-auto grid w-full max-w-[1400px] grid-cols-1 px-4 sm:px-6 md:px-10 lg:grid-cols-2 lg:items-center lg:gap-16"
         style={{ y: contentY, opacity: contentOpacity }}
       >
         <div className="lg:max-w-[680px]">
@@ -85,7 +85,7 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            className="display-xl text-[clamp(4.25rem,10vw,9.5rem)]"
+            className="display-xl text-[clamp(3rem,15.5vw,9.5rem)] sm:text-[clamp(4.25rem,10vw,9.5rem)]"
             style={interactive ? { x: textX } : {}}
           >
             {["Muhammad", "Taha"].map((line, i) => (
@@ -105,7 +105,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-8 border-t border-border pt-6">
             <div className="overflow-hidden">
               <motion.p
-                className="font-mono text-[clamp(0.72rem,1.5vw,1rem)] tracking-[0.42em] uppercase text-neon"
+                className="font-mono text-[clamp(0.72rem,1.5vw,1rem)] tracking-[0.18em] uppercase text-neon sm:tracking-[0.42em]"
                 initial={reduce ? { opacity: 0 } : { y: "120%", opacity: 0 }}
                 animate={{ y: "0%", opacity: 1 }}
                 transition={{ duration: 1.1, delay: 0.55, ease: easeOut }}

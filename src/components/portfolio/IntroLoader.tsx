@@ -34,7 +34,7 @@ export function IntroLoader() {
         >
           <div className="flex items-start justify-between">
             <span className="label-mono text-foreground">Muhammad Taha</span>
-            <span className="label-mono">Portfolio / 2026</span>
+            <span className="label-mono">Portfolio</span>
           </div>
 
           <div className="mx-auto flex w-full max-w-sm flex-col items-center">

@@ -36,7 +36,7 @@ export function Contact() {
     <section
       ref={ref}
       id="contact"
-      className="relative mx-auto max-w-[1400px] px-6 pt-28 pb-16 md:px-10 md:pt-40"
+      className="relative mx-auto max-w-[1400px] px-4 pt-20 pb-12 sm:px-6 sm:pt-28 sm:pb-16 md:px-10 md:pt-40"
     >
       <SectionLabel index="05">Contact</SectionLabel>
 
@@ -76,13 +76,15 @@ export function Contact() {
                   target={c.href.startsWith("http") ? "_blank" : "_self"}
                   rel="noreferrer"
                   data-cursor="hover"
-                  className="group flex items-center justify-between gap-6 py-6 transition-colors hover:text-neon"
+                  className="group flex min-w-0 items-center justify-between gap-3 py-6 transition-colors hover:text-neon sm:gap-6"
                 >
                   <span className="flex items-center gap-4">
                     <Icon className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-neon" />
                     <span className="label-mono">{c.label}</span>
                   </span>
-                  <span className="truncate text-sm md:text-base">{c.value}</span>
+                  <span className="min-w-0 truncate text-right text-sm md:text-base">
+                    {c.value}
+                  </span>
                 </a>
               </motion.li>
             );
@@ -92,10 +94,10 @@ export function Contact() {
 
       <motion.div
         style={{ scale, opacity }}
-        className="mt-24 origin-center overflow-hidden border-y border-border py-12 text-center md:mt-40 md:py-20"
+        className="mt-20 origin-center overflow-hidden border-y border-border py-10 text-center sm:mt-24 sm:py-12 md:mt-40 md:py-20"
       >
         <motion.p
-          className="display-xl text-[clamp(4rem,14vw,13rem)] leading-[0.75]"
+          className="display-xl text-[clamp(3rem,14vw,13rem)] leading-[0.75]"
           initial={{ y: "105%", skewY: 7, filter: "blur(12px)" }}
           whileInView={{ y: "0%", skewY: 0, filter: "blur(0px)" }}
           viewport={{ once: true, amount: 0.45 }}
@@ -124,7 +126,7 @@ export function Contact() {
         </motion.p>
       </motion.div>
 
-      <div className="mt-20 flex flex-col items-center justify-between gap-3 border-t border-neon/40 pt-8 text-center md:flex-row md:text-left">
+      <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-neon/40 pt-8 text-center sm:mt-20 md:flex-row md:text-left">
         <p className="label-mono text-xs text-foreground">Muhammad Taha — MERN Stack Developer</p>
         <p className="label-mono text-xs text-muted-foreground">Karachi, Pakistan</p>
       </div>

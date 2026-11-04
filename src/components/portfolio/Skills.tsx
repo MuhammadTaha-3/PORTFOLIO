@@ -119,8 +119,8 @@ export function Skills() {
   const [active] = useState<string | null>(null);
 
   return (
-    <section ref={ref} id="skills" className="relative overflow-hidden py-28 md:py-40">
-      <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+    <section ref={ref} id="skills" className="relative overflow-hidden py-20 sm:py-28 md:py-40">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10">
         <SectionLabel index="02">Skills</SectionLabel>
         <h2 className="display-xl mt-10 text-[clamp(2.4rem,7vw,6.5rem)]">
           <MaskLine>The toolkit</MaskLine>
